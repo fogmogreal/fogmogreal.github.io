@@ -301,7 +301,7 @@ iframe{
 }
 
 .project2 .project-text{
-    height: 365px;
+    height: auto;
     width: 335px;
     padding: 20px 35px;
     background-color: #ffffff;
@@ -315,6 +315,7 @@ iframe{
 .project p{
     text-align: justify;
     margin: 40px;
+    font-size: 12px;
 }
 
 .project2 p{
@@ -486,13 +487,14 @@ footer h4 {
     }
 
     nav {
-        padding: 20px;
+        padding: 45px;
     }
 
     .logo {
         margin: auto;
-        width: 50px;
+        width: 70px;
     }
+
 
     .content-sign-in{
         position: absolute;
@@ -533,6 +535,13 @@ footer h4 {
     .menumobile {
         display: block;
         z-index: 5;
+        border-top: 6px solid #000;
+    }
+
+    .menumobile::after,
+    .menumobile::before{
+        width: 40px;
+        height: 6px;
     }
 
     .nav-list {
@@ -540,8 +549,8 @@ footer h4 {
         display: flex;
         top: 0;
         right: 0;
-        width: 70%;
-        height: 100vh;
+        width: 80%;
+        height: 1000vh;
         background: #ffffff;
         clip-path: circle(100px at 90% -150%);
         transition: .4s ease-out;
@@ -575,7 +584,7 @@ footer h4 {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1500px at 90% -15%);
+        clip-path: circle(15000px at 90% -15%);
         pointer-events: all;
     }
 
@@ -593,7 +602,7 @@ footer h4 {
 
     .nav.active .menumobile::after {
         transform: rotate(-135deg);
-        margin-top: -3px;
+        margin-top: -5px;
     }
 }
 
