@@ -483,6 +483,10 @@ footer h4 {
         overflow-x: hidden;
     }
 
+    #preloader{
+        background-size: 10%;
+    }
+    
 /*--------------------------- Heading Section ------------------------------*/
 
     header {
